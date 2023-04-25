@@ -85,7 +85,8 @@ Example commands:
 
 Install this project with:
 
-
+- npm install
+- npm start to run the server.
 
 ### Usage
 
@@ -127,16 +128,7 @@ To run the ESLint linter
 ### Deployment
 
 You can deploy this project using:
-- [Netlify](https://charming-nougat-0d03a1.netlify.app/) 
-
-### Project documentation
-Here is a documentation of our code:
-[video](https://drive.google.com/file/d/1x3A61KS4p-l4cauWAvEhheclVeoLSsdE/view)
-<!--
-Example:
-```sh
-```
- -->
+- The deploy will be done in the future.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
