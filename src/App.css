@@ -38,3 +38,12 @@
 .calcButtons:nth-child(19) {
   background-color: #f5913e;
 }
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem black;
+  margin-top: 2rem;
+  align-items: center;
+  padding: 1rem;
+}
