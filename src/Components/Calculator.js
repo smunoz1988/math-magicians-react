@@ -10,9 +10,9 @@ const Calculator = () => {
     operation: null,
   });
 
-  const handleKeyPress = (event) => {
+  const handleKeyPress = (clickButton) => {
     setResult((prevState) => {
-      const calculator = calculate(prevState, event.target.textContent);
+      const calculator = calculate(prevState, clickButton.target.textContent);
       return { ...prevState, ...calculator };
     });
   };
@@ -21,9 +21,9 @@ const Calculator = () => {
     <>
       <div className="calculator">
         <p className="outputResult">
-          {result.total}
-          {result.next}
-          {result.operation}
+          { result.total }
+          { result.operation }
+          { result.next }
         </p>
         <div className="buttonContainer">
           {buttons.map((button) => (
