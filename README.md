@@ -68,7 +68,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - npm install
-- npm start
+- npm start to run the server
 
 ### Setup
 
