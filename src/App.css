@@ -41,9 +41,17 @@
 
 .quoteContainer {
   display: flex;
+  width: 18rem;
   flex-direction: column;
   border: solid 0.1rem black;
   margin-top: 2rem;
-  align-items: center;
   padding: 1rem;
+}
+
+.quotes {
+  width: 100%;
+}
+
+.quoteAuthor {
+  font-weight: 900;
 }

@@ -1,27 +1,35 @@
 import { useEffect, useState } from 'react';
 
 const Quotes = () => {
-  const [quote, setQuote] = useState([]);
+  const [quotesReceived, setQuote] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=');
+      const category = 'funny';
+      const res = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+        headers: {
+          'X-Api-Key': '6GbkZeAqM5BjI03ACdq/Ig==y1NOsmUqa5LXYEbO',
+        },
+      });
       const json = await res.json();
       setQuote(json);
-      console.log(json);
     };
     fetchData();
-  }, [setQuote]);
+  }, []);
 
   return (
-    <>
-      <div className="quoteContainer">
-        <p className="quote">
-          { quote.quote }
-        </p>
-        <button type="button">Get Quote!</button>
-      </div>
-    </>
+    <div className="quoteContainer">
+      {quotesReceived.map((quote) => (
+        <div key={quote} className="quotes">
+          <p>
+            {`"${quote.quote}"`}
+          </p>
+          <p className="quoteAuthor">
+            {quote.author}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 };
 
