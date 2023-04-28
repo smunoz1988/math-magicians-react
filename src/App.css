@@ -38,3 +38,20 @@
 .calcButtons:nth-child(19) {
   background-color: #f5913e;
 }
+
+.quoteContainer {
+  display: flex;
+  width: 18rem;
+  flex-direction: column;
+  border: solid 0.1rem black;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.quotes {
+  width: 100%;
+}
+
+.quoteAuthor {
+  font-weight: 900;
+}

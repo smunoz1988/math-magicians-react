@@ -52,7 +52,8 @@
 ### Key Features <a name="key-features"></a>
 
 > Here are some key features of the application :
-- **The home page**
+- **Calculator component**
+- **Quote component consuming API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
