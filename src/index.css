@@ -2,4 +2,11 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-image: url(./84261.jpg);
+  background-size: cover;
+  color: white;
+}
+
+#root {
+  width: 100%;
 }

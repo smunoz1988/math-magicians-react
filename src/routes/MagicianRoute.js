@@ -8,7 +8,7 @@ const MagicianMathRoute = () => (
   <>
     <NavBar />
 
-    <div>
+    <div className="sectionsContainer">
       <Routes>
         <Route path="Home" element={<Home />} />
         <Route path="Calculator" element={<Calculator />} />

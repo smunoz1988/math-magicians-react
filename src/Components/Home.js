@@ -1,8 +1,11 @@
+import homeImage from '../970426.jpg';
+
 const Home = () => (
-  <div>
+
+  <div className="homeContainer">
 
     <h1>
-      Welcome to our page
+      Welcome to our page!
     </h1>
 
     <p>
@@ -27,7 +30,10 @@ const Home = () => (
       Tempora dolorem consequuntur vero minima maiores dicta at?
     </p>
 
+    <img src={homeImage} className="homeImageCont" alt="logo" />
+
   </div>
+
 );
 
 export default Home;
