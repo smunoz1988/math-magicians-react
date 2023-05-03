@@ -36,15 +36,13 @@
 
 .quoteContainer {
   display: flex;
-  width: 18rem;
+  width: 70%;
+  margin: auto;
   flex-direction: column;
   border: solid 0.1rem black;
   margin-top: 2rem;
   padding: 1rem;
-}
-
-.quotes {
-  width: 100%;
+  font-size: 1.5rem;
 }
 
 .quoteAuthor {
@@ -73,6 +71,11 @@ nav {
   padding-right: 1rem;
   text-decoration: none;
   color: white;
+  transition: all .2s ease-in-out;
+}
+
+.navItems:hover {
+  transform: scale(1.1); 
 }
 
 .homeContainer{
@@ -84,4 +87,21 @@ nav {
 .homeImageCont {
   width: 50%;
   margin: auto;
+}
+
+.calculatorSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 0 3rem;
+}
+
+.calculator {
+  width: 35rem;
+  border: solid white 0.2rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
