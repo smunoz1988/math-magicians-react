@@ -40,10 +40,9 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-     <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
-     <li><a href="https://reactnative.dev/">React</a></li>
+    <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+    <li><a href="https://reactnative.dev/">React</a></li>
   </ul>
 </details>
 
@@ -54,6 +53,7 @@
 > Here are some key features of the application :
 - **Calculator component**
 - **Quote component consuming API**
+- **Use React Router to make the routes work**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
