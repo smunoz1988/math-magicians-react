@@ -54,6 +54,7 @@
 - **Calculator component**
 - **Quote component consuming API**
 - **Use React Router to make the routes work**
+- **Use Jest Snapshot for testing the codes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,6 +143,14 @@ You can deploy this project using:
 - GitHub: [@smunoz](https://github.com/smunoz1988)
 - Twitter: [@twitterhandle](https://twitter.com/Santiag24209785)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/santiago-munoz-0b2b1a260)
+
+👤 **Antwi Eric(Collaborator)**
+
+- GitHub: [@Mylo16](https://github.com/Mylo16)
+
+👤 **Clinton Younge(Collaborator)**
+
+- GitHub: [@ClintonYounge](https://github.com/ClintonYounge)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
