@@ -4,23 +4,28 @@ const Quotes = () => {
   const [loading, setLoading] = useState('not loading');
   const [error, setError] = useState('error');
   const [quotesReceived, setQuote] = useState([]);
+  const category = 'funny';
 
   const fetchData = async () => {
-    const category = 'funny';
-    const res = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-      headers: {
-        'X-Api-Key': '6GbkZeAqM5BjI03ACdq/Ig==y1NOsmUqa5LXYEbO',
-      },
-    });
-    setLoading('Loading');
-    const receiveData = await res.json();
-    setQuote(receiveData);
-    setError('not error');
+    try {
+      const res = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+        headers: {
+          'X-Api-Key': '6GbkZeAqM5BjI03ACdq/Ig==y1NOsmUqa5LXYEbO',
+        },
+      });
+      const receiveData = await res.json();
+      setQuote(receiveData);
+      setError('not error');
+    } catch (error) {
+      setError('error');
+    } finally {
+      setLoading('Load');
+    }
   };
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [category]);
 
   if (loading === 'not loading') {
     return (

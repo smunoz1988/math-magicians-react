@@ -1,10 +1,10 @@
-import MagicianMathRoute from './routes/MagicianRoute';
+import MathRoute from './routes/MathRoute';
 import './App.css';
 
 function App() {
   return (
     <>
-      <MagicianMathRoute />
+      <MathRoute />
     </>
   );
 }
