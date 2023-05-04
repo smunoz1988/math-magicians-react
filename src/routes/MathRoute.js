@@ -4,7 +4,7 @@ import Calculator from '../Components/Calculator';
 import Home from '../Components/Home';
 import Quotes from '../Components/Quotes';
 
-const MagicianMathRoute = () => (
+const MathRoute = () => (
   <>
     <NavBar />
 
@@ -19,4 +19,4 @@ const MagicianMathRoute = () => (
   </>
 );
 
-export default MagicianMathRoute;
+export default MathRoute;

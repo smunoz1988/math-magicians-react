@@ -1,4 +1,4 @@
-import homeImage from '../970426.jpg';
+import homeImage from '../Assets/970426.jpg';
 
 const Home = () => (
 
