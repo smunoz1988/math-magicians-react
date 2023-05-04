@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../components/home.js';
+import Home from '../components/home';
 
 describe('it should show content when the user enter the Math home page', () => {
   it('displays title', () => {
