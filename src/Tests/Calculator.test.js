@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Calculator from '../Components/Calculator'
+import Calculator from '../Components/Calculator';
 
 describe('Calculator component', () => {
   it('should match snapshot', () => {
