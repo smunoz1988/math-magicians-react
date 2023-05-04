@@ -10,4 +10,14 @@ describe('calculate', () => {
     const result = calculate({ total: 100, next: 50, operation: '+' }, '2');
     expect(result).toEqual({ total: 100, next: '502', operation: '+' });
   });
+
+  test('should return an object with updated next value when buttonName is .', () => {
+    const result = calculate({ total: 100, next: '50', operation: '+' }, '.');
+    expect(result).toEqual({ total: 100, next: '50.', operation: '+' });
+  });
+
+  test('should return an object with updated next value when buttonName is +/-', () => {
+    const result = calculate({ total: 100, next: '50', operation: '+' }, '+/-');
+    expect(result).toEqual({ total: 100, next: '-50', operation: '+' });
+  });
 });
