@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Quotes from '../components/Quotes';
+import Quotes from '../Components/Quotes'
 
 describe('Quotes component', () => {
   it('should match snapshot', () => {
