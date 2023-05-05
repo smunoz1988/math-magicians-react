@@ -18,7 +18,7 @@ const Calculator = () => {
       <div className="calculatorSection">
         <h3>Lets do some math!</h3>
         <div className="calculator">
-          <p className="outputResult">
+          <p className="outputResult" data-testid="outputResult">
             { result.total }
             { result.operation }
             { result.next }

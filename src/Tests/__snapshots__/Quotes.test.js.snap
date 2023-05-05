@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes renders a quote 1`] = `
+<div
+  class="quoteContainer"
+  role="main"
+>
+  <div
+    class="quotes"
+  >
+    <p>
+      "Quote 1"
+    </p>
+    <p
+      class="quoteAuthor"
+    >
+      Author 1
+    </p>
+  </div>
+</div>
+`;
