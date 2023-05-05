@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Calculator interaction should call calculate function when any calculator button is clicked 1`] = `
+exports[`Calculator interaction updates outputResult when buttons 3 x 4 and = are clicked 1`] = `
 <p
   class="outputResult"
+  data-testid="outputResult"
 >
-  10
+  8
 </p>
 `;

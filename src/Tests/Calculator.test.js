@@ -1,20 +1,43 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import calculate from '../logic/calculate';
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
 import Calculator from '../Components/Calculator';
 
-jest.mock('../logic/calculate');
-
 describe('Calculator interaction', () => {
-  test('should call calculate function when any calculator button is clicked', () => {
-    calculate.mockReturnValue({ total: 10, next: null, operation: null });
-    render(<Calculator />);
-    const button = screen.getByText('1');
-    fireEvent.click(button);
-    expect(calculate).toHaveBeenCalledTimes(1);
-    expect(calculate).toHaveBeenCalledWith(
-      { total: 0, next: null, operation: null }, '1',
-    );
-    expect(screen.getByText('10')).toBeInTheDocument();
-    expect(screen.getByText('10')).toMatchSnapshot();
+  test('updates outputResult when button 1 is clicked', () => {
+    // Arrange
+    const { getByText, getByTestId } = render(<Calculator />);
+    // Act
+    fireEvent.click(getByText('1'));
+    // Assert
+    const calculatorScreen = getByTestId('outputResult');
+    expect(calculatorScreen).toHaveTextContent('1');
   });
+
+  test('updates outputResult when buttons 2 + 4 and = are clicked', () => {
+    // Arrange
+    const { getByText, getByTestId } = render(<Calculator />);
+    // Act
+    fireEvent.click(getByText('2'));
+    fireEvent.click(getByText('+'));
+    fireEvent.click(getByText('4'));
+    fireEvent.click(getByText('='));
+    // Assert
+    const calculatorScreen = getByTestId('outputResult');
+    expect(calculatorScreen).toHaveTextContent('6');
+  });
+
+  test('updates outputResult when buttons 3 x 4 and = are clicked', () => {
+    // Arrange
+    const { getByText, getByTestId } = render(<Calculator />);
+    // Act
+    fireEvent.click(getByText('2'));
+    fireEvent.click(getByText('x'));
+    fireEvent.click(getByText('4'));
+    fireEvent.click(getByText('='));
+    // Assert
+    const calculatorScreen = getByTestId('outputResult');
+    expect(calculatorScreen).toHaveTextContent('8');
+    expect(calculatorScreen).toMatchSnapshot();
+  });
+
 });
