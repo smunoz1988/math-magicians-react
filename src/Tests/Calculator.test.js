@@ -39,5 +39,4 @@ describe('Calculator interaction', () => {
     expect(calculatorScreen).toHaveTextContent('8');
     expect(calculatorScreen).toMatchSnapshot();
   });
-
 });
