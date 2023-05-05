@@ -1,5 +1,7 @@
 import React from 'react';
-import { render, screen, act, fireEvent } from '@testing-library/react';
+import {
+  render, screen, act, fireEvent,
+} from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from '../Components/Navbar';
 
@@ -8,7 +10,7 @@ describe('NavBar', () => {
     const { container } = render(
       <BrowserRouter>
         <NavBar />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     expect(screen.getByText('Math Magicians')).toBeInTheDocument();
@@ -23,7 +25,7 @@ describe('NavBar', () => {
     const { container } = render(
       <BrowserRouter>
         <NavBar />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     act(() => {
