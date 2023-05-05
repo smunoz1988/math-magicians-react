@@ -44,7 +44,7 @@ const Quotes = () => {
   }
 
   return (
-    <div className="quoteContainer">
+    <div role="main" className="quoteContainer">
       {quotesReceived.map((quote) => (
         <div key={quote} className="quotes">
           <p>

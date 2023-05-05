@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 jsCapstone-project <a name="about-project"></a>
+# 📖 Math-Magicians-React <a name="about-project"></a>
 
 > In this project, I build a basic React website.
 ## 🛠 Built With <a name="built-with"></a>

@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quotes component should match snapshot 1`] = `
-<DocumentFragment>
-  <p
-    class="quoteAuthor"
+exports[`Quotes renders a quote 1`] = `
+<div
+  class="quoteContainer"
+  role="main"
+>
+  <div
+    class="quotes"
   >
-    Loading
-  </p>
-</DocumentFragment>
+    <p>
+      "Quote 1"
+    </p>
+    <p
+      class="quoteAuthor"
+    >
+      Author 1
+    </p>
+  </div>
+</div>
 `;

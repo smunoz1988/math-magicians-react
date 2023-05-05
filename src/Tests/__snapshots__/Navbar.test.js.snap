@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar navigates to the Calculator page when Calculator link is clicked 1`] = `
+<nav>
+  <h2>
+    Math Magicians
+  </h2>
+  <div
+    class="navItemsContainer"
+  >
+    <a
+      class="navItems"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      aria-current="page"
+      class="navItems active"
+      href="/Calculator"
+    >
+      Calculator
+    </a>
+    <a
+      class="navItems"
+      href="/Quotes"
+    >
+      Quotes
+    </a>
+  </div>
+</nav>
+`;
+
+exports[`NavBar renders correctly 1`] = `
+<nav>
+  <h2>
+    Math Magicians
+  </h2>
+  <div
+    class="navItemsContainer"
+  >
+    <a
+      class="navItems"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="navItems"
+      href="/Calculator"
+    >
+      Calculator
+    </a>
+    <a
+      class="navItems"
+      href="/Quotes"
+    >
+      Quotes
+    </a>
+  </div>
+</nav>
+`;
