@@ -11,7 +11,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [💻 Awesome books Presentation](#vgs-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,7 +53,13 @@
 - **Calculator component**
 - **Quote component consuming API**
 - **Use React Router to make the routes work**
-- **Use Jest Snapshot for testing the codes**
+- **Use Jest Snapshot for testing**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Live Demo <a name="live-demo"></a>
+
+https://math-magicians-94jn.onrender.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,8 +134,9 @@ To run the ESLint linter
 
 ### Deployment
 
-You can deploy this project using:
-- The deploy will be done in the future.
+You can see the live version of this project using:
+
+https://math-magicians-94jn.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
