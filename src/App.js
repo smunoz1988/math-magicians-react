@@ -1,5 +1,5 @@
 import MathRoute from './routes/MathRoute';
-import './App.css';
+import './Assets/App.css';
 
 function App() {
   return (

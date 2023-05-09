@@ -1,5 +1,3 @@
-import homeImage from '../Assets/970426.jpg';
-
 const Home = () => (
 
   <div className="homeContainer">
@@ -29,8 +27,6 @@ const Home = () => (
       eveniet rem expedita aliquid excepturi dicta aspernatur.
       Tempora dolorem consequuntur vero minima maiores dicta at?
     </p>
-
-    <img src={homeImage} className="homeImageCont" alt="logo" />
 
   </div>
 
